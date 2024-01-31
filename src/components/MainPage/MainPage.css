@@ -1,0 +1,87 @@
+
+
+.r-container{
+    gap:2rem;
+    overflow: hidden;
+    position: relative;
+  
+}
+.r-head{
+    margin-bottom: 2rem;
+  
+
+}
+.r-card{
+    gap:0.6rem;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width:max-content;
+    margin:auto;
+    transition:all 300ms ease-in;
+  
+}
+.r-card>img{
+width: 100%;
+max-width: 15rem;
+
+}
+.r-card>:nth-child(2){
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+.r-card>:nth-child(3)
+{
+    font-size :0.7rem;
+    width: 15rem;
+
+}
+.r-card>:nth-child(4)
+{
+   
+    
+}
+
+.r-card:hover{
+
+    scale: 1.060;
+    cursor: pointer;
+    background: linear-gradient(180deg,
+    rgba(255, 255, 255, 0) 0%,
+    #df5b4736 217.91%);
+    box-shadow: 0px,72px,49px,-51px rgba(136,160, 255, 0.21);
+}
+.swiper-horizantal{
+
+    overflow: visible;
+}
+
+.r-wrapper{
+    height: 70vh;
+    width:100vw;
+}
+.r-buttons{
+    position: relative;
+    gap: 1rem;
+    top: -0.5rem;
+    right: 0;
+
+}
+.r-buttons button{
+    font-size: 1.2rem;
+    padding: 0.2rem 0.8rem;
+    color: #1f3e72;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 1;
+}
+.r-buttons>:nth-child(1)
+{
+    background-color: var(--lightBlue);
+}
+.r-buttons>:nth-child(2)
+{
+    box-shadow: 0px 0px 5px 1px rgba(0,0, 0, 0.25);
+}
