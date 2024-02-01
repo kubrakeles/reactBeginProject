@@ -1,13 +1,8 @@
 
 import React, { useState } from 'react'
-import ReactDOM from 'react-dom';
 import './Header.css'
-const DropdownMenu = () => {
-  const [isOpen, setIsOpen] = useState(false);
+import { Link } from 'react-router-dom'
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  }};
 const Header = () => {
   return (
     <section className="h-wrapper">
@@ -16,17 +11,17 @@ const Header = () => {
 
         <div className="flexCenter h-menu">
 
-          <a href="">
+          <Link to="/Home">
             Anasayfa
-          </a>
+          </Link>
           
         
-          <a href="">
+          <Link to="/Sorular">
             Sıkça Sorulan Sorular
-          </a>
-          <a href="">
+          </Link>
+          <Link to="">
             Teklif Al
-          </a>
+          </Link>
           <button className='button'>
           <a href="">
             İletişim
