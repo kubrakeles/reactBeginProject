@@ -2,22 +2,29 @@ import { HiShieldCheck } from "react-icons/hi";
 import { MdCancel, MdAnalytics } from "react-icons/md";
 const data = [
   {
-    icon: <HiShieldCheck/>,
-    heading: "Best interest rates on the market",
+    icon: <HiShieldCheck />,
+    heading: "Müşteri Memnuniyeti",
     detail:
-      "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
+      "Müşterilerimizin ihtiyaçlarını anlamak ve en iyi çözümleri sunmak için çaba sarf ediyoruz. Onların memnuniyeti, işimizin merkezinde yer alır.",
   },
   {
-    icon: <MdCancel />,
-    heading: "Prevent unstable prices",
+    icon: <HiShieldCheck />,
+    heading: "Güvenilirlik",
     detail:
-      "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
+      "Şeffaf ve dürüst bir iletişimle müşterilerimize güven veriyor, onların sigorta süreçlerini kolaylaştırmak için adım atıyoruz.",
   },
   {
-    icon: <MdAnalytics />,
-    heading: "Best price on the market",
+    icon: <HiShieldCheck />,
+    heading: "Profesyonellik",
     detail:
-      "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
+      "Alanında uzman, deneyimli ve eğitimli bir kadro ile hizmet veriyor müşterilerimize en yüksek standartlarda profesyonel destek sağlıyoruz",
+  },
+
+  {
+    icon: <HiShieldCheck />,
+    heading: "Sürekli Gelişim",
+    detail:
+      "Kendimizi ve hizmetlerimizi sürekli olarak geliştirmek için çaba gösteriyor, müşteri geri bildirimlerini dikkate alarak daha iyi bir gelecek için çalışıyoruz.",
   },
 ];
 export default data;

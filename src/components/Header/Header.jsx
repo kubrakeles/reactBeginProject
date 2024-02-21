@@ -19,6 +19,7 @@ const Header = () => {
           <Link to="/Sorular">
             Sıkça Sorulan Sorular
           </Link>
+          
           <Link to="">
             Teklif Al
           </Link>

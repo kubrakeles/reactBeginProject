@@ -8,22 +8,23 @@ import { Route } from "react-router-dom";
 import Sorular from "./Routes/Sorular";
 import Home from "./Routes/Home";
 
-import './App.css';
+import "./App.css";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="App">
-         <div>
-        <div className="white-gradient"/>
+      <div>
+        <div className="white-gradient" />
+        <DropDownMenu/>
         <Header />
-        </div>
-      <Routes>       
-      <Route exact path="/Home" element={<Home/>}/>
+      </div>
+      <Routes>
+        <Route exact path="/Home" element={<Home />} />
 
-        <Route exact path="/Sorular" element={<Sorular/>}/>
+        <Route exact path="/Sorular" element={<Sorular />} />
       </Routes>
 
-      
-  
+      <Footer />
     </div>
   );
 }
