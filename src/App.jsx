@@ -2,7 +2,6 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import { Routes } from "react-router-dom";
 import MainPage from "./components/MainPage/MainPage";
-
 import Companies from "./components/Companies/Companies";
 import { Route } from "react-router-dom";
 import Sorular from "./Routes/Sorular";
@@ -15,7 +14,7 @@ function App() {
     <div className="App">
       <div>
         <div className="white-gradient" />
-        <DropDownMenu/>
+       
         <Header />
       </div>
       <Routes>

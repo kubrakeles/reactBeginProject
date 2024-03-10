@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react'
 import './Header.css'
+import DropdownMenu from '../DropdownMenu/DropdownMenu'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
@@ -15,7 +16,7 @@ const Header = () => {
             Anasayfa
           </Link>
           
-        
+          <DropdownMenu/>
           <Link to="/Sorular">
             Sıkça Sorulan Sorular
           </Link>
