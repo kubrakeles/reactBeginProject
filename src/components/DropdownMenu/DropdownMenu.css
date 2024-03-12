@@ -17,12 +17,17 @@ position: relative;
     opacity: 0;
     transform: translateY(-20px);
     transition: all .3s ease;
+    
+    
 
 
 &.show-dropdown{
 visibility: visible;
 opacity: 0.9;
 transform: translateY(0);
+cursor: pointer;
+
+}
 
 }
 
@@ -36,17 +41,17 @@ transform: translateY(0);
     cursor: pointer;
     transition: all .1s ease;
     color:var(--orangebackground);
-    &:hover{background-color: antiquewhite;}
+    &:hover
+    {
+        background-color: antiquewhite;
+  
+    }
     }
 
 
 }
 
-&.show-dropdown{
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
 
-}
+
 
 

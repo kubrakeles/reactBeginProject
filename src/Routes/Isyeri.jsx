@@ -1,10 +1,10 @@
 import React from 'react'
 import OnePageHero from '../components/OnePage/OnePageHero'
 
-const Sorular = () => {
+const Isyeri = () => {
   return (
-    <div>Sorular</div>
+    <div>Isyeri</div>
   )
 }
 
-export default Sorular
+export default Isyeri
