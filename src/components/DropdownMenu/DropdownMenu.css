@@ -4,7 +4,7 @@ position: relative;
 
 }
 .dropdown-menu{
-    min-width: 15rem;
+    min-width: 19rem;
     background-color: rgb(35, 31, 31);
     position: absolute;
     top: 120%;
@@ -33,7 +33,7 @@ cursor: pointer;
 
     .dropdown-item{
         padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        /*padding-bottom: 0.5rem;*/
         font-weight: bold;
         padding-left: 0.3rem;
     background-color: rgb(255, 255, 255);
@@ -41,15 +41,29 @@ cursor: pointer;
     cursor: pointer;
     transition: all .1s ease;
     color:var(--orangebackground);
-    &:hover
-    {
-        background-color: antiquewhite;
-  
-    }
-    }
+    &:hover{
+        background-color: #fad7b9
 
+    }
+ 
+    
+.dropdown-item-2{
+font-weight: 300;
+padding-left: 1.3rem;
+padding-bottom: 0.4rem;
+
+&:hover
+{
+    background-color: antiquewhite;
 
 }
+}
+    
+    }
+    
+
+
+
 
 
 

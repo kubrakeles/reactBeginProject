@@ -5,8 +5,8 @@ const Yabancilar = () => {
   return (
     <OnePageHero
    cName="yabanci"
-   heroImg="./OnePagePhoto/yabancı.png"
-   title="Konut Sigortası"
+   heroImg="./OnePagePhoto/yabancılar.png"
+   title="YABANCI SAĞLIK Sigortası"
    text=""
    />
   )

@@ -3,55 +3,75 @@
     "name": "TRAFİK SİGORTASI",
     "price": "47,043",
     "detail": "Otomobilinizle her gün trafiğe çıkıyorsunuz. Ancak herhangi bir hasar anında Zorunlu Trafik Sigortası...",
-    "image": "./sliderImagesHarmonia/3.png"
+    "image": "./sliderImagesHarmonia/trafik.png",
+    "route":"/Trafik"
   },
   {
-    "name": "DASK SİGORTASI",
-    "price": "35,853",
-    "detail": "Zorunlu Deprem Sigortası, genel anlamda, belediye sınırları içinde kalan meskenlere yönelik olarak oluşturulan sigorta...",
-    "image": "./sliderImagesHarmonia/2.png"
-  },
-  {
-    "name": "KASKO SİGORTASI",
-    "price": "66,353",
-    "detail": "Aracınızın markası, modeli ne olursa olsun yaşamınızı kolaylaştırdığı bir gerçek. Farklı ihtiyaçlara farklı çözümler geliştirdik ve...",
-    "image": "./sliderImagesHarmonia/10.png"
-  },
-  {
-    "name": "KONUT SİGORTASI",
+    "name": "EV SİGORTASI",
     "price": "35,853",
     "detail": " Özel yaşam alanınızı ve bununla birlikte sizin için değerli olan pek çok şeyi güvence altına alan, koruyan ...",
-    "image": "./sliderImagesHarmonia/9.png"
-  },
-
-  {
-    "name": "NAKLİYAT SİGORTASI",
-    "price": "66,353",
-    "detail": "Tam ziya teminatı, sadece taşımayı yapan geminin tamamen batması ve yok olması sebebi ile taşınan...",
-    "image": "./sliderImagesHarmonia/8.png"
-  },
-  {
-    "name": "İŞYERİ SİGORTASI",
-    "price": "35,853",
-    "detail": "Binanızın ve/veya iş yerinizdeki varlıklarınızın, iş yeriniz ile ilgili olarak sorumluluklarınızın ve işinizin devamlılığı ile ilgili...",
-    "image": "./sliderImagesHarmonia/11.png"
+    "image": "./sliderImagesHarmonia/9.png",
+    "route":"/Konut"
   },
   {
     "name": " SAĞLIK SİGORTASI",
     "price": "35,853",
     "detail": "Özel Sağlık Sigortası, yatarak tedavi olunması gereken durumlarda geçerli olan ve tedavi masraflarının karşılanmasında",
-    "image": "./sliderImagesHarmonia/5.png"
+    "image": "./sliderImagesHarmonia/5.png",
+    "route":"/Saglik"
   },
   {
-    "name": "İNŞAAT SİGORTASI",
+    "name": "DASK SİGORTASI",
     "price": "35,853",
-    "detail": "Doğal afetlerin ve ekonomik krizlerin sıkça yaşandığı ülkemizde çeşitli ölçekteki tüm yatırımların güvence altına alınması oldukça önem taşımaktadır...",
-    "image": "./sliderImagesHarmonia/6.png"
+    "detail": "Zorunlu Deprem Sigortası, genel anlamda, belediye sınırları içinde kalan meskenlere yönelik olarak oluşturulan sigorta...",
+    "image": "./sliderImagesHarmonia/deprem.png",
+    "route":"/Dask"
+  },
+  {
+    "name": "YEŞİL KART SİGORTASI",
+    "price": "66,353",
+    "detail": "Yeşil kart sistemine üye olan ülkelerde araç kullanırken karşı karşıya kalabileceğiniz kazalarda üçüncü kişilere verebileceğiniz...",
+    "image": "./sliderImagesHarmonia/yesilkart.png",
+    "route":"/Yesilkart"
+  }
+  
+  ,
+  {
+    "name": "KASKO SİGORTASI",
+    "price": "66,353",
+    "detail": "Aracınızın markası, modeli ne olursa olsun yaşamınızı kolaylaştırdığı bir gerçek. Farklı ihtiyaçlara farklı çözümler geliştirdik ve...",
+    "image": "./sliderImagesHarmonia/10.png",
+    "route":"/Kasko"
+  },
+  
+
+  {
+    "name": "NAKLİYAT SİGORTASI",
+    "price": "66,353",
+    "detail": "Tam ziya teminatı, sadece taşımayı yapan geminin tamamen batması ve yok olması sebebi ile taşınan...",
+    "image": "./sliderImagesHarmonia/8.png",
+    "route":"/Nakliyat"
+  },
+  {
+    "name": "İŞYERİ SİGORTASI",
+    "price": "35,853",
+    "detail": "Binanızın ve/veya iş yerinizdeki varlıklarınızın, iş yeriniz ile ilgili olarak sorumluluklarınızın ve işinizin devamlılığı ile ilgili...",
+    "image": "./sliderImagesHarmonia/11.png",
+    "route":"/Isyeri"
+  },
+
+  {
+    "name":  "SORUMLULUK SİGORTASI",
+    "price": "35,853",
+    "detail": "Toplumun sağlık hizmetlerine erişimini sağlayan hekimler, mesleklerini icra ederken büyük bir sorumluluk taşır...",
+    "image": "./sliderImagesHarmonia/sorumluluk.png",
+    "route":"/Sorumluluk"
   }, 
    {
-    "name": "YABANCILAR İÇİN SAĞLIK SİGORTASI",
+    "name": "GARANTİ SİGORTASI",
     "price": "47,043",
     "detail": "Yabancı uyruklu kişilerin Türkiye’de ikamet izni için gerekli olan...",
-    "image": "./sliderImagesHarmonia/12.png"
+    "image": "./sliderImagesHarmonia/garanti.png",
+    "route":"/Garanti"
   }
 ]

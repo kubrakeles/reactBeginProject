@@ -3,18 +3,18 @@ import './OnePageHero.css'
 
 const OnePageHero = (props) => {
   return (
-    <div className={props.cName}>
-      
-        <img src={props.heroImg} alt="Konut Sigortası" className="banner-img"/>
-        <div className="hero-text">
-            <h1>{props.title}</h1>
+    <section className={props.cName}>
+      <img src={props.heroImg} alt={props.altInfo} className="banner-img"/>
+        
+        <div className="paddings innerWidth FlexColStart text-container ">
+            <span className='primaryText'>{props.title}</span>
             <p>{props.text}</p>
         
         </div>
   
   
   
-    </div>
+    </section>
    
 
     

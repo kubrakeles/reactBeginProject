@@ -4,6 +4,7 @@ import "swiper/css";
 import "./MainPage.css";
 import data from "../../utils/slider.json";
 import { sliderSettings } from "../../utils/common";
+import { Link } from 'react-router-dom';
 const MainPage = () => {
   return (
     <section className="r-wrapper">
@@ -16,11 +17,18 @@ const MainPage = () => {
           <SliderButtons />
           {data.map((card, i) => (
             <SwiperSlide key={i}>
+              <Link to={card.route}>
               <div className="flexColStart r-card">
-                <img src={card.image} alt="home" />
+                
+                <img src={card.image} alt="home"/>
+               
                 <span className="primaryText">{card.name}</span>
                 <span className="secondaryText">{card.detail}</span>
-              </div>
+                <span>
+
+
+                </span>
+              </div></Link>
             </SwiperSlide>
           ))}
         </Swiper>

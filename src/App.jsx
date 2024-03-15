@@ -13,8 +13,12 @@ import Trafik from "./Routes/Trafik";
 import Saglik from "./Routes/Saglik";
 import Nakliyat from  "./Routes/Nakliyat";
 import Isyeri from  "./Routes/Isyeri";
-import Insaat from  "./Routes/Insaat";
+import Sorumluluk from "./Routes/Sorumluluk";
 import Dask from  "./Routes/Dask";
+import Hayat from "./Routes/Hayat";
+import Yesilkart from "./Routes/yesilkart";
+import Garanti from "./Routes/Garanti";
+
 import "./App.css";
 
 import Footer from "./components/Footer/Footer";
@@ -36,8 +40,12 @@ function App() {
         <Route exact path="/Saglik" element={<Saglik />} />
         <Route exact path="/Nakliyat" element={<Nakliyat />} />
         <Route exact path="/Isyeri" element={<Isyeri />} />
-        <Route exact path="/Insaat" element={<Insaat />} />
+        <Route exact path="/Sorumluluk" element={<Sorumluluk />} />
         <Route exact path="/Dask" element={<Dask />} />
+        <Route exact path="/Hayat" element={<Hayat />} />
+        <Route exact path="/Yesilkart" element={<Yesilkart />} />
+        <Route exact path="/Garanti" element={<Garanti />} />
+
 
       </Routes>
 
