@@ -17,7 +17,7 @@ const Home = () => {
         <Companies/>
         <OurValue/>
          <Contacts/> 
-         
+        
         </div>
   )
 }

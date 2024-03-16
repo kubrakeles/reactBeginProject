@@ -20,7 +20,18 @@ const Companies = () => {
         <img src="./companies/11.jpg" alt="" />
         <img src="./companies/12.jpg" alt="" />
         <img src="./companies/13.jpg" alt="" />
-        <img src="./companies/14.jpg" alt="" />
+        <img src="./companies/16.png" alt="" />
+        <img src="./companies/17.png" alt="" />
+        <img src="./companies/18.png" alt="" />
+        <img src="./companies/19.png" alt="" />
+        <img src="./companies/20.png" alt="" />
+        <img src="./companies/21.png" alt="" />
+        <img src="./companies/22.png" alt="" />
+        <img src="./companies/23.png" alt="" />
+        <img src="./companies/24.png" alt="" />
+        <img src="./companies/25.png" alt="" />
+        <img src="./companies/26.png" alt="" />
+        <img src="./companies/27.png" alt="" />
  
 
 

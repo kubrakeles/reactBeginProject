@@ -3,14 +3,14 @@
     color:white;
     position: relative;
     padding-bottom: 2rem;
-
+   z-index: 99;
 }
 .hero-des{
     font-weight: 500;
 
 }
 .hero-container{
-justify-content: space-between;
+justify-content: space-around;
 align-items: flex-end;
 
 }
@@ -65,4 +65,34 @@ align-items: flex-end;
 .hero-button{
     width: 20rem;
     justify-content: space-between;
+}
+
+@media (max-width: 640px) {
+
+    .hero-title>h1{
+
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .image-container{
+        width: 95%;
+        height: 25rem;
+    }
+    .hero-left {
+        gap: 1.5rem;
+        padding-bottom: 0rem;
+    
+}  
+.hero-right{
+
+width: 100%;
+
+}
+.hero-button{
+    width: max-content;
+}
+.hero-container{
+    padding-top: 2rem;
+}
+
 }
