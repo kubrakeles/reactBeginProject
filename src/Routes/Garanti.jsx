@@ -1,9 +1,16 @@
 import React from 'react'
 import OnePageHero from '../components/OnePage/OnePageHero'
+import { Helmet } from 'react-helmet'
 
 const Garanti = () => {
   return (
-    <> <OnePageHero
+    <>     <Helmet>
+    <title>Garanti Sigortası</title>
+    <meta name="description" content="İkinci el Araç Garanti Sigortası, ikinci el araçlarda mevcut garanti süresi 
+    2. El Araç Garanti Sigortası'nın Faydaları Ek Teminatlar 2. El Araç Garanti Sigortası Primi " />
+  </Helmet>
+    
+    <OnePageHero
     cName="garanti"
     heroImg="./OnePagePhoto/garanti.png"
     title="Garanti Sigortası"

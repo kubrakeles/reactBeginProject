@@ -1,13 +1,21 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 import OnePageHero from '../components/OnePage/OnePageHero'
 
 const Yesilkart = () => {
   return (
-    <> <OnePageHero
+   
+    <><Helmet>
+    <title>Yesil Kart Sigortası</title>
+    <meta name="description" content="Yurtdışı Araç Sigortası, Yeşil kart sistemine üye olan ülkelerde araç kullanırken karşı karşıya kalabileceğiniz kazalarda üçüncü kişilere verebileceğiniz maddi ve bedeni zararları karşılayan bir sigorta türüdür. Bu sigorta, trafik sigortasının uluslararası versiyonu olarak kabul edilir ve Türkiye'de zorunludur. Yeşil Kart Sigortası Kapsamı,Yeşil Kart Sigortası Fiyatları" />
+  </Helmet>
+      
+      
+      <OnePageHero
     cName="arac"
     heroImg="./OnePagePhoto/arac.png"
-    title="Yeşil kart Sigortası - Yurtdışı Araç Sigortası"
-    altInfo="Yeşil kart Sigortası - Yurtdışı Araç Sigortası"
+    title="Yeşil Kart Sigortası - Yurtdışı Araç Sigortası"
+    altInfo="Yeşil Kart Sigortası - Yurtdışı Araç Sigortası"
     text=""
     
     />

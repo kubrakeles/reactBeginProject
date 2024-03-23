@@ -1,9 +1,16 @@
 import React from 'react'
 import OnePageHero from '../components/OnePage/OnePageHero'
+import { Helmet } from 'react-helmet';
 
 const Trafik = () => {
   return (
-    <><OnePageHero
+    <>
+    <Helmet>
+    <title>Trafik Sigortası</title>
+    <meta name="description" content="Zorunlu Trafik Sigortası Trafik sigortasının teminatları 	Motosiklet Trafik Sigortası Trafik sigortası, karayolu taşıtlarının neden olabileceği maddi ve bedeni zararları karşılayan zorunlu bir sigortadır. " />
+  </Helmet>
+    
+    <OnePageHero
     cName="trafik"
     heroImg="./OnePagePhoto/trafik.png"
     title="Trafik Sigortaları"

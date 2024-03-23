@@ -1,8 +1,15 @@
 import React from 'react'
 import OnePageHero from '../components/OnePage/OnePageHero'
+import { Helmet } from 'react-helmet';
 const Sorumluluk = () => {
   return (
-    <> <OnePageHero
+    <>
+    <Helmet>
+    <title>Sorumluluk Sigortası</title>
+    <meta name="description" content="Zorunlu Hekim Sorumluluk Sigortası Zorunlu Hekim Sorumluluk Sigortası'nın Avantajları 	Tıpta uzmanlık mevzuatı çerçevesinde uzman olan hekimler için zorunlu bir sigortadır. Sigorta Primi Mesleki Sorumluluk Sigortaları 
+    Mesleki Sorumluluk Sigortası'na İhtiyaç Duyanlar " />
+  </Helmet>
+     <OnePageHero
     cName="arac"
     heroImg="./OnePagePhoto/sorumluluk.png"
     title="Sorumluluk Sigortaları"

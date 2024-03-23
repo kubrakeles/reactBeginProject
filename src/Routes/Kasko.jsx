@@ -1,9 +1,17 @@
 import React from 'react'
 import OnePageHero from '../components/OnePage/OnePageHero'
+import { Helmet } from 'react-helmet'
 
 const Kasko = () => {
   return (
- <> <OnePageHero
+ <> 
+  <Helmet>
+    <title>Kasko Sigortası</title>
+    <meta name="description" content="Kasko motorlu kara taşıtlarının kaza, hırsızlık, yanma ve diğer risklere karşı güvence altına alındığı bir sigorta türüdür
+    Trafik sigortasından farklı olarak Kasko sigortası zorunlu değildir Kasko sigortasının teminatları Kasko Temel Teminatlar Kasko Ek Teminatlar Kasko sigortası primi " />
+  </Helmet>
+ 
+ <OnePageHero
    cName="arac"
    heroImg="./OnePagePhoto/kasko.png"
    title="Kasko Sigortası"

@@ -1,9 +1,19 @@
 import React from 'react'
 import OnePageHero from '../components/OnePage/OnePageHero'
+import { Helmet } from 'react-helmet';
 
 const Saglik = () => {
   return (
-    <><OnePageHero
+    <>
+    <Helmet>
+    <title>Sağlık Sigortası</title>
+    <meta name="description" content="Tamamlayıcı Sağlık Sigortası Yabancı Sağlık Sigortası Yabancı sağlık sigortasının avantajları Seyahat sağlık sigortası 
+     Sosyal Güvenlik Kurumu (SGK) tarafından karşılanmayan sağlık masraflarınızı karşılayan bir sigorta türüdür. Bu sigorta sayesinde, SGK ile anlaşmalı özel sağlık kuruluşlarında muayene, tetkik, tedavi ve ameliyat gibi sağlık
+     hizmetlerini daha uygun fiyatlarla alabilirsiniz" />
+  </Helmet>
+    
+    
+    <OnePageHero
     cName="saglik"
     heroImg="./OnePagePhoto/yabancılar.png"
     title="Sağlık Sigortaları"

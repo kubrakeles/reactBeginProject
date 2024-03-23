@@ -1,9 +1,21 @@
 import React from 'react'
 import OnePageHero from '../components/OnePage/OnePageHero'
-
+import { Helmet } from 'react-helmet'
 const Nakliyat = () => {
   return (
-   <> <OnePageHero
+   <> 
+  <Helmet>
+    <title>Nakliyat Sigortası</title>
+    <meta name="description" content="Nakliyat sigortaları Emtia Nakliyat Sigortası Taşıyıcı Sorumluluk Sigortası Kıymet Nakliyat Sigortası 
+    Kıymet Nakliyat Sigortası Tekne Sigortası Depolama Sigortası Serbest Liman Sigortası Fuar ve Sergi Sigortası Nakliye Araçları Sigortası
+    Nakliyat Sigortası Seçerken Dikkat Edilmesi Gerekenler
+    Nakliyat sigortası yaptırmadan önce farklı sigorta şirketlerinin tekliflerini karşılaştırmanız
+     ve ihtiyaçlarınıza en uygun sigortayı seçmeniz önemlidir. " />
+  </Helmet>
+   
+   
+   
+   <OnePageHero
    cName="nakliyat"
    heroImg="./OnePagePhoto/nakliyat.png"
    altInfo="Nakliyat Sigortası"

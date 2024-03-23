@@ -3,7 +3,13 @@ import OnePageHero from '../components/OnePage/OnePageHero'
 
 const Hayat = () => {
   return (
-    <><OnePageHero
+    <>
+        <Helmet>
+    <title>Hayat Sigortası</title>
+    <meta name="description" content="Hayat sigortası, sigortalının vefatı halinde, önceden belirlenen lehtarlara tazminat ödemesini taahhüt eden bir sigorta türüdür
+    Hayat Sigortasının Avantajları Sevdiklerinize maddi destek sağlar Eğitim masraflarını karşılar Borçlarınızı kapatır" />
+  </Helmet>
+    <OnePageHero
 
     cName="hayat"
     heroImg="./OnePagePhoto/hayat.png"

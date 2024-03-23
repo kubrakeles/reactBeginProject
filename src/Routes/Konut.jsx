@@ -1,9 +1,16 @@
 import React from 'react'
 import OnePageHero from '../components/OnePage/OnePageHero'
-
+import { Helmet } from 'react-helmet'
 const Konut = () => {
   return (
-   <><OnePageHero
+   <>
+   
+   <Helmet>
+    <title>Konut Sigortası</title>
+    <meta name="description" content=" Ev sigortası Ev sigortasının kapsamı Yangın Hırsızlık Su Baskını Doğal Afetler Cam Kırılması
+    Kişisel Sorumluluk Ev sigortası, evinizi ve eşyalarınızı yangın, hırsızlık, su baskını gibi birçok riske karşı güvence altına alan bir sigorta türüdür." />
+  </Helmet>
+   <OnePageHero
 
       cName="konut"
       heroImg="./OnePagePhoto/konut.png"
