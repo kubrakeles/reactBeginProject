@@ -18,6 +18,8 @@ import Dask from  "./Routes/Dask";
 import Hayat from "./Routes/Hayat";
 import Yesilkart from "./Routes/yesilkart";
 import Garanti from "./Routes/Garanti";
+import EmailPage from './Routes/EmailPage';
+
 
 import "./App.css";
 
@@ -45,7 +47,7 @@ function App() {
         <Route exact path="/Hayat" element={<Hayat />} />
         <Route exact path="/Yesilkart" element={<Yesilkart />} />
         <Route exact path="/Garanti" element={<Garanti />} />
-
+        <Route exact path="/EmailPage" element={<EmailPage />} />
 
       </Routes>
 

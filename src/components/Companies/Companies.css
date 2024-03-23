@@ -3,6 +3,7 @@
     gap:1rem;
  
 }
+
 .flexCompanies>img{
 width: 7rem;
 margin-left: 1rem;
@@ -10,4 +11,30 @@ margin-left: 1rem;
 }
 .c-head{
     margin-bottom: 2rem;
+}
+
+@media (max-width:640px) {
+    .c-head{
+
+       text-align: center;
+       margin: 1.0em; 
+    }
+  
+}
+
+@media (min-width:640px) {
+      .c-head{
+       
+      }
+      .c-wrapper{
+        
+    }
+}
+@media (min-width:1280px) {
+    .c-head{
+      
+    }
+    .c-wrapper{
+      
+    }
 }

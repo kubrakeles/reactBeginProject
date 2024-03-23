@@ -59,6 +59,31 @@ gap: 1.6rem;
 
 }
 
+@media (max-width:1024px) {
+    .i-container{
+        flex-direction: column;
+    }
+    .i-right{
+        justify-content:center ;
+    }
+    .contact-modes{
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+        width: 100%;
+    }
+    .mode{
+        width: 100%;
+       
+    }
+    .mode .button{
+        margin: 1rem;
+    }
+
+    
+}
+
 
 
 

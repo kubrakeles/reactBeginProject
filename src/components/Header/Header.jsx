@@ -40,7 +40,7 @@ if(document.documentElement.clientWidth <= 800)
             Sıkça Sorulan Sorular
           </Link>
           
-          <Link to="">
+          <Link to="/EmailPage">
             Teklif Al
           </Link>
           <button className='button'>

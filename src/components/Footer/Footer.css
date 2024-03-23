@@ -7,3 +7,13 @@
 .f-wrapper{
     background:#ff7f9ec7 ;
 }
+
+@media (max-width:1024px) {
+    .detail .primaryText{
+        font-size: 1rem;
+
+    }
+    .detail .secondaryText{
+        font-size: 1rem;
+    }
+}
