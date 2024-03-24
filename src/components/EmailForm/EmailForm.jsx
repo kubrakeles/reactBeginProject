@@ -8,8 +8,17 @@ const EmailForm = () => {
         password: '1EC13C620B18AD1F453FDAB02EA608F96D5B',
         Host: 'smtp.elasticmail.com',
         Port:'2525',*/
-        SecurityToken:'579f5559-32e9-4de2-b301-d46ced0b1b0b',
-        To : 'kubrakeles3@gmail.com',
+        /*
+        username:info@harmoniasigorta.com
+        password:BA369AC7AC9B88FFD59B5159AAF4A222FBA7
+        Host:smtp.elasticmail.com
+        Port:2525
+        Smtp-token:93039e85-923b-4125-8185-ac7f777a2f80
+ */
+
+
+        SecurityToken:'93039e85-923b-4125-8185-ac7f777a2f80',
+        To : 'info@harmoniasigorta.com',
         From : formState.email,
         Subject : formState.subject,
         Body : formState.message

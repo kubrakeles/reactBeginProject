@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flexColStart f-right">
             <span className="primaryText">Bilgi</span>
             <span className="secondaryText">İstanbul, Turkey</span>
-
+            <span className="secondaryText">info@harmoniasigorta.com</span>
         </div>
       </div>
     </section>

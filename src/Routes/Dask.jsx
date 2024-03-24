@@ -1,9 +1,17 @@
 import React from 'react'
 import OnePageHero from '../components/OnePage/OnePageHero'
+import { Helmet } from 'react-helmet'
 
 const Dask = () => {
   return (
-   <> <OnePageHero
+   <> 
+   
+   <Helmet>
+    <title>Deprem Sigortası</title>
+    <meta name="description" content="DASK Zorunlu Deprem Sigortası DASK Zorunlu Deprem Sigortası'nın Avantajları DASK Zorunlu Deprem Sigortası Kapsamı
+    Dask Sigortası yangın, infilak, tsunami ve yer kayması risklerine karşı binaları ve konutları güvence altına alan bir sigorta türüdür. Bu sigorta, Doğal Afet Sigortaları Kurumu (DASK) tarafından sunulmaktadır." />
+  </Helmet>
+   <OnePageHero
     cName="dask"
     heroImg="./OnePagePhoto/deprem.png"
     title="Dask Sigortası"
