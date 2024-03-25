@@ -1,6 +1,6 @@
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import { Routes } from "react-router-dom";
+import { Routes} from "react-router-dom";
 import MainPage from "./components/MainPage/MainPage";
 import Companies from "./components/Companies/Companies";
 import { Route } from "react-router-dom";
@@ -19,6 +19,7 @@ import Hayat from "./Routes/Hayat";
 import Yesilkart from "./Routes/yesilkart";
 import Garanti from "./Routes/Garanti";
 import EmailPage from './Routes/EmailPage';
+import { redirect } from "react-router-dom";
 
 
 import "./App.css";
@@ -32,22 +33,25 @@ function App() {
 
         <Header />
       </div>
+
       <Routes>
-        <Route exact path="/Home" element={<Home />} />
-        <Route exact path="/Sorular" element={<Sorular />} />
-        <Route exact path="/Konut" element={<Konut />} />
-        <Route exact path="/Kasko" element={<Kasko />} />
-        <Route exact path="/Yabancilar" element={<Yabancilar />} />
-        <Route exact path="/Trafik" element={<Trafik />} />
-        <Route exact path="/Saglik" element={<Saglik />} />
-        <Route exact path="/Nakliyat" element={<Nakliyat />} />
-        <Route exact path="/Isyeri" element={<Isyeri />} />
-        <Route exact path="/Sorumluluk" element={<Sorumluluk />} />
-        <Route exact path="/Dask" element={<Dask />} />
-        <Route exact path="/Hayat" element={<Hayat />} />
-        <Route exact path="/Yesilkart" element={<Yesilkart />} />
-        <Route exact path="/Garanti" element={<Garanti />} />
-        <Route exact path="/EmailPage" element={<EmailPage />} />
+
+        <Route exact path="/" element={<Home />} />
+        <Route  path="/Home" element={<Home />} />
+        <Route  path="/Sorular" element={<Sorular />} />
+        <Route  path="/Konut" element={<Konut />} />
+        <Route  path="/Kasko" element={<Kasko />} />
+        <Route  path="/Yabancilar" element={<Yabancilar />} />
+        <Route  path="/Trafik" element={<Trafik />} />
+        <Route  path="/Saglik" element={<Saglik />} />
+        <Route  path="/Nakliyat" element={<Nakliyat />} />
+        <Route  path="/Isyeri" element={<Isyeri />} />
+        <Route  path="/Sorumluluk" element={<Sorumluluk />} />
+        <Route  path="/Dask" element={<Dask />} />
+        <Route  path="/Hayat" element={<Hayat />} />
+        <Route  path="/Yesilkart" element={<Yesilkart />} />
+        <Route  path="/Garanti" element={<Garanti />} />
+        <Route  path="/EmailPage" element={<EmailPage />} />
 
       </Routes>
 

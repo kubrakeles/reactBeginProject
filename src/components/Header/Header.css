@@ -24,6 +24,10 @@
 
     display: none;
 }
+.header_img{
+    pointer-events: auto;
+    position: relative;
+}
 @media (max-width : 768px){
     .menu-icon{
         display: block;

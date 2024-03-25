@@ -19,9 +19,11 @@ if(document.documentElement.clientWidth <= 800)
 }
   return (
     <section className="h-wrapper">
+      
       <div className="flexCenter paddings innerWidth h-container">
-        <img src="./Grayscale_on_Transparent.png" alt="logo" width={200} />
-    
+      <Link to="/Home">
+        <img src="./Grayscale_on_Transparent.png" alt="logo" width={200} className='header_img'/>
+        </Link>
     
      <OutsideClickHandler
      onOutsideClick={()=>{
@@ -55,7 +57,7 @@ if(document.documentElement.clientWidth <= 800)
           <BiMenuAltRight size={30}></BiMenuAltRight>
         </div>
       </div>
-
+     
 
     </section>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import OnePageHero from '../components/OnePage/OnePageHero'
-
+import { Helmet } from 'react-helmet'
 const Hayat = () => {
   return (
     <>
