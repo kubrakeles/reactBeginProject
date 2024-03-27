@@ -1,63 +1,75 @@
-import React,{useState} from 'react'
+import React,{useRef,useState} from 'react'
 import "./EmailForm.css"
+import Alert from '../Alert/Alert';
+import emailjs from "@emailjs/browser";
+
+
+
 const EmailForm = () => {
-  
-    const [formState, setFromState]=useState({});
-    const config={
-        /*username: 'kubrakeles3@gmail.com',
-        password: '1EC13C620B18AD1F453FDAB02EA608F96D5B',
-        Host: 'smtp.elasticmail.com',
-        Port:'2525',*/
-        /*
-        username:info@harmoniasigorta.com
-        password:BA369AC7AC9B88FFD59B5159AAF4A222FBA7
-        Host:smtp.elasticmail.com
-        Port:2525
-        Smtp-token:93039e85-923b-4125-8185-ac7f777a2f80
- */
+  const form = useRef();
+  const [emailSent, setEmailSent] = useState(false);
+  const [error, setError] = useState(null);
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-
-        SecurityToken:'93039e85-923b-4125-8185-ac7f777a2f80',
-        To : 'info@harmoniasigorta.com',
-        From : formState.email,
-        Subject : formState.subject,
-        Body : formState.message
-
-    }
-
-    const changeHandler=(event)=>{
-        setFromState({...formState,[event.target.name]: event.target.value});
-    }
-const submitHandler =(event)=>{
-    event.preventDefault();
-    if(window.Email){
-       window.Email.send(config).then(()=>{
-
-        alert("Email send successfully")
-
-       }); 
-    }
-}
+    emailjs
+      .sendForm(
+        "service_t03hs9i",
+        "template_vw34r6k",
+        form.current,
+        "5JlMS3D7fIm9tKh6j"
+      )
+      .then(
+        (result) => {
+          setEmailSent(true);
+          setError(null);
+          console.log("message sent");
+          document.getElementById('email').value = '';
+          document.getElementById('message').value = '';
+          document.getElementById('name').value = '';
+        },
+        (error) => {
+          setError(error.message); // Hata durumunu ayarla
+          setEmailSent(false); 
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
-    <div className="container">
-      <h2>E-posta Gönder</h2>
-      <form action="#" onSubmit={submitHandler}>
-        <div className="form-group">
-          <label htmlFor="email">E-posta Adresi:</label>
-          <input type="email" id="email" placeholder='Email Adresi' name="email" value={formState.email ||""} onChange={changeHandler} required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="subject">Konu:</label>
-          <input type="text" id="subject" placeholder='Konu' value={formState.subject} name="subject" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">Mesaj:</label>
-          <textarea id="message" name="message" placeholder='Açıklama' value={formState.message} rows="5" required></textarea>
-        </div>
-        <button type="submit">Gönder</button>
-      </form>
-    </div>)
-}
+<section className='email-wrapper' >
+<div className="paddings innerWidth FlexColStart email-container ">
 
-export default EmailForm
+{emailSent && <Alert  
+        mainColor= "#EDFEEE"
+        secondaryColor= "#5CB660"
+        symbol= "check_circle"
+        title= "Success"
+        text= "Emailiniz Başarılı bir şekilde iletilmiştir."
+         />}
+
+{error && !emailSent &&  <Alert  
+         mainColor="#FDEDED"
+         secondaryColor= "#F16360"
+         symbol= "error"
+         title= "Error"
+         text="Email Gönderilirken Bir Hata Oluştu Lütfen info@harmoniasigorta.com adresinden iletişime geçiniz !!!"
+         />}
+
+      <form ref={form} onSubmit={sendEmail}>
+        <label>İsim Soyisim</label>
+        <input id='name' type="text" name="user_name" />
+        <label>Email</label>
+        <input id='email' type="email" name="user_email" />
+        <label>Mesaj</label>
+        <textarea id='message' name="message" />
+        <input type="submit" value="Gönder" />
+      </form>
+      </div>
+      </section>
+  );
+};
+
+export default EmailForm;
+
+

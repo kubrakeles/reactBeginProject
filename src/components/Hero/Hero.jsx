@@ -1,5 +1,7 @@
 import React from "react";
 import "./Hero.css";
+import { Link } from 'react-router-dom';
+
 import {motion, spring} from 'framer-motion'
 const Hero = () => {
   return (
@@ -30,7 +32,9 @@ const Hero = () => {
                 </span>
           </div>
           <div className="flexCenter search-bar">
-            <button className="button hero-button">TEKLİF AL</button>
+            <button className="button hero-button">
+              <Link to="/EmailPage"></Link>
+              TEKLİF AL</button>
           </div>
           <div className="flexcenter stats">
 

@@ -20,8 +20,20 @@
 @media (max-width:760px) {
 
     .white-gradient{
-
+        visibility: none;
+        width :0;
         position: absolute;
+       background: none;
+    }
+      
+    
+}
+@media (max-width:1024px) {
+
+    .white-gradient{
+        visibility: none;
+        width: 0;
+                position: absolute;
        background: none;
     }
       
