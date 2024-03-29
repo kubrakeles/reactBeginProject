@@ -33,8 +33,9 @@ const Hero = () => {
           </div>
           <div className="flexCenter search-bar">
             <button className="button hero-button">
-              <Link to="/EmailPage"></Link>
-              TEKLİF AL</button>
+            <Link to="/EmailPage">
+           TEKLİF AL
+          </Link></button>
           </div>
           <div className="flexcenter stats">
 

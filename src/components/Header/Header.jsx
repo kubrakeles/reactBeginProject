@@ -46,7 +46,7 @@ if(document.documentElement.clientWidth <= 800)
             Teklif Al
           </Link>
           <button className='button'>
-          <a href="">
+          <a href="#Contact">
             İletişim
           </a>
           </button>

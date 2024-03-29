@@ -47,9 +47,14 @@ box-shadow:var(--shadow) ;
 }
 .mode>:nth-child(1){
 width: 100%;
-gap: 1.6rem;
+gap: 1.0rem;
 
 }
+.info-text{
+
+    font-size: 14px;
+}
+
 .mode .detail .primaryText{
     font-size: 1.1rem;
     font-weight: 600;

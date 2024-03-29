@@ -3,14 +3,16 @@ import "./Contacts.css";
 import { MdCall } from "react-icons/md";
 import { BsFillChatDotsFill } from "react-icons/bs";
 import { BsFillEnvelopeAtFill } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 import { BsInstagram } from "react-icons/bs";
 
 import { HiChatBubbleBottomCenter } from "react-icons/hi2";
 
 const Contacts = () => {
+  const instagramUsername = 'harmoniasigorta';
   return (
-    <section className="i-wrapper">
+    <section id="Contact" className="i-wrapper">
       <div className="paddings innerWidth flexCenter i-container">
         {/* Left Side */}
         <div className="flexColStart i-left">
@@ -31,11 +33,11 @@ const Contacts = () => {
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">Telefon</span>
-                    <span className="secondaryText">0532 900 90 34 
+                    <span className="secondaryText">0546 906 9198
                     </span>
                   </div>
                 </div>
-                <div className="flexCenter button" onClick={()=>window.location.href=`tel:${'+905329009034'}`}>Şimdi Ara</div>
+                <div className="flexCenter button" onClick={()=>window.location.href=`tel:${'+905469069198'}`}>Şimdi Ara</div>
               </div>
               {/* Second  MAil */}
               <div className="flexColCenter mode">
@@ -45,11 +47,13 @@ const Contacts = () => {
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">Mail</span>
-                    <span className="secondaryText">info@
+                    <span className="secondaryText info-text">info@
                     harmoniasigorta.com</span>
                   </div>
                 </div>
-                <div className="flexCenter button"> Gönder</div>
+                <div className="flexCenter button">
+                  <Link to="/EmailPage"> Gönder</Link>
+                  </div>
               </div>
           
             </div>
@@ -62,10 +66,13 @@ const Contacts = () => {
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">Sosyal Medya</span>
-                    <span className="secondaryText">Instagram Kullanıcı Adı</span>
+                    <span className="secondaryText">Instagram harmoniasigorta</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Bağlantıya Git</div>
+                <div className="flexCenter button">
+                  <a href={`https://www.instagram.com/${instagramUsername}`} target="_blank" rel="noopener noreferrer">
+                    Bağlantıya Git </a>
+                  </div>
               </div>
             </div>
           </div>
